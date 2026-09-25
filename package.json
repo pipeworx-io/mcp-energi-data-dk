@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-energi-data-dk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Energi Data Service (Energinet) MCP — Denmark's official open energy data.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2c82cfe15dcc16fc7790fadffaf6e69d3f61ad338e7a9f14d26002e46ec0b9f0",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-43491531f4380a4175cc8834ac4c9bdc38476ad2e8e6128acea43a8103c65ce5",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }

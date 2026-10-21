@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-energi-data-dk",
-  "version": "0.1.2",
-  "description": "Energi Data Service (Energinet) MCP — Denmark's official open energy data.",
+  "version": "0.1.3",
+  "description": "Energi Data Service (Energinet) MCP — Denmark's official open energy data. Keyless. Electricity day-ahead spot prices by bidding zone, real-time grid CO2 emission intensity, and production/consumption. DK1 = west Denmark, DK2 = east Denmark.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-43491531f4380a4175cc8834ac4c9bdc38476ad2e8e6128acea43a8103c65ce5",
-    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
+    "sourceHash": "v1-2ad116c7c6abe24ee8bbde16741a686cc025b3dd758d6c2204ad61fb3c318ab1",
+    "sourceCommit": "5749f83c0ea115fab4c0c0ef04b66b05f2507d67"
   }
 }

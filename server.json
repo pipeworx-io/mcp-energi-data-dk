@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/energi-data-dk",
   "title": "Energi Data Dk",
   "description": "Energi Data Service (Energinet) MCP — Denmark's official open energy data. Keyless. Electricity…",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://pipeworx.io/packs/energi-data-dk",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-energi-data-dk",

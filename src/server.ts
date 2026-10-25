@@ -10,7 +10,7 @@ import pack from './index.js';
 
 
 const server = new Server(
-  { name: '@pipeworx/mcp-energi-data-dk', version: '0.1.3' },
+  { name: '@pipeworx/mcp-energi-data-dk', version: '0.1.4' },
   { capabilities: { tools: {} } },
 );
 

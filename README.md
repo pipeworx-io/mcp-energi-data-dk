@@ -2,15 +2,15 @@
 
 Energi Data Service (Energinet) MCP — Denmark's official open energy data. Keyless. Electricity day-ahead spot prices by bidding zone, real-time grid CO2 emission intensity, and production/consumption. DK1 = west Denmark, DK2 = east Denmark.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1856+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1858+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `spot_prices` | Day-ahead electricity spot prices from Energi Data Service (Energinet, Denmark/Nordic). Prices per bidding zone (PriceArea) in DKK and EUR per MWh, hourly. Bidding zones: DK1 (west Denmark), DK2 (east Denmark), DE (Germany), NO2, SE3, SE4, and others. Omit "area" to get all zones. Keyless official open data. |
+| `spot_prices` | Day-ahead electricity spot prices from Energi Data Service (Energinet, Denmark/Nordic). Prices per bidding zone (PriceArea) in DKK and EUR per MWh: 15-minute intervals from 2025-10-01 (the day-ahead market moved to 15-minute products), hourly before that. Bidding zones: DK1 (west Denmark), DK2 (east Denmark), DE (Germany), NO2, SE3, SE4, and others. Omit "area" to get all zones. Keyless official open data. |
 | `co2_intensity` | Real-time grid CO2 emission intensity (g CO2/kWh) from Energinet Denmark, sampled every 5 minutes per bidding zone (DK1=west, DK2=east); defaults to the last 12 readings (~1 hour). Lower values mean cleaner electricity.sampled every 5 minutes per bidding zone. Areas: DK1 (west Denmark), DK2 (east Denmark). Lower values mean cleaner electricity right now. Keyless official open data. |
-| `query_dataset` | Generic escape hatch for any of the ~100 Energi Data Service (Energinet, Denmark) datasets. Examples: "ProductionConsumptionSettlement" (production/consumption by type per area+hour), "CO2EmisProg" (CO2 prognosis), "Elspotprices", "CO2Emis". Returns the raw records array for the dataset. Keyless official open data. |
+| `query_dataset` | Generic escape hatch for any of the ~100 Energi Data Service (Energinet, Denmark) datasets. Examples: "ProductionConsumptionSettlement" (production/consumption by type per area+hour), "CO2EmisProg" (CO2 prognosis), "DayAheadPrices", "CO2Emis". Returns the raw records array for the dataset. Keyless official open data. |
 
 ## Quick Start
 
@@ -56,7 +56,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1856+ data sources. The
+Both URLs reach the same gateway and the same 1858+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

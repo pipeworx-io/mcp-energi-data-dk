@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-energi-data-dk",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Energi Data Service (Energinet) MCP — Denmark's official open energy data. Keyless. Electricity day-ahead spot prices by bidding zone, real-time grid CO2 emission intensity, and production/consumption. DK1 = west Denmark, DK2 = east Denmark.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-energi-data-dk": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "energi-data-dk"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-energi-data-dk.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/energi-data-dk",
   "pipeworx": {
-    "sourceHash": "v1-e2a153d13827c498da2aa5c0cf09ec00b3839bb2543fcdec0ed183c19b0b1860",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "energi-data-dk",
+    "gatewaySlug": "energi-data-dk",
+    "sourceHash": "v1-964d90d374c39463a637d37f7d7ea149d00cb952cc9840dca21b1e0838a6f4bd",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
